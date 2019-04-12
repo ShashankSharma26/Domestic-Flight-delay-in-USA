@@ -4,7 +4,7 @@ This interactive visualisation is to show the insights from 2008 domestic flight
 
 The visualisation is developed using R shiny and the web application has been hosted on shiny server. The webpage can be accessed using the following url
 
-https://shashanksharma9313.shinyapps.io/a6430ac4eb124fa6a5a87f729e022f31_3/
+http://bit.ly/FlighDelay
  
  
 
