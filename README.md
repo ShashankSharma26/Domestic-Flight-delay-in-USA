@@ -50,7 +50,6 @@ The data contains information of 20 airlines that fly within USA, the airlines w
 
 To ensure the data is not skewed, the rows of data with departure/arrival delay above the upper whisker of their respective boxplot were removed. The data also had a considerate number of rows with arrival delay below 0 meaning that the flight landed before scheduled time. So much so that the lower whisker of the arrival delay boxplot was at -61 minutes. As this exploration is only to discover the trend in delayed flights, all the rows with negative arrival delay values where removed.
 
-
-
+![](images/boxplot arrival/departure delay.png)
 
 
