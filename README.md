@@ -74,5 +74,31 @@ Figure 3 was unable to explain the reason for less delays in September, October 
 
 This visualisation helps us to understand that the month of June has the maximum delay time due to bad weather, hence, it explains the high delay patterns. Figure 4 also shows that the month of September, October and November has the lowest number of weather delay as compared to all other months which explains the low delay patterns observed in these months in figure 3.
 
+## 3.2 Delay patterns by Airlines
+
+![](images/delay%20per%20Airlines.png)
+
+The above figure shows that Southwest, United and American airlines which are amongst the biggest airlines companies in USA, has the most number of delays in year 2008. This data might be skewed because these airlines have more functional flights than the other ones. Hence, to get a better idea about the airline which is most likely to be delayed, average carrier delay should be used as carrier delay is within the control of the airlines and would be the best factor to suggest an airlines punctuality.
+
+![](images/Carrier%20delay.png)
+
+Figure 7 shows a clearer picture about the measure of punctuality of all the airlines. Southwest airlines had the most number of delays but has the least average carrier delay, this proves that the dominance of southwest in figure 6 was just because of more number of flights. The tree map shows that Mesa Airlines has the highest number of average carrier delay, hence is most likely to be delayed as compared to all other flights.
+
+## 3.3 Taxi In/Out dependency on departure delay
+
+![](images/Taxi%20in.png)
+
+![](images/Taxi%20out.png)
+
+Figure 8 and 9 shows that taxi in and taxi out are independent of how delayed a flight is during departure. 
+
+## 3.4 Taxi In/Out dependency on Airlines
+
+![](images/airlines%20taxi%20in.png)
+
+
+![](images/airlines%20taxi%20out.png)
+
+
 
 
