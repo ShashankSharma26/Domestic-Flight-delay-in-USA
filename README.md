@@ -151,7 +151,7 @@ The plots are given a colour gradient based on the amount of delay to make the e
 
 ![](images/Data.png)
 
-The ‘Data’ tab is given in the application to provide the user with the sample data based on which all the visualisations were made. The data table is also provided with a search bar in case a user needs an exact value for from the data.
+The ‘Data’ tab is given in the application to provide the user with the sample data based on which all the visualisations were made. The data table is also provided with a search bar in case a user needs an exact value from the data.
 
 # 5. Conclusion and Reflection
 
