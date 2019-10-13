@@ -58,7 +58,7 @@ The shortest domestic flight mentioned above has an air time of 16 minutes. This
 
 Figure 2 shows that taxi in/out also had peculiar values in the data, taxi time of more than two hours or equal to zero is unrealistic. Therefore, using an online resource to find the maximum and minimum taxi/in out time ("What Is Your Airport's Average Taxi Time?", 2016), all the rows with values below 2 or above 11.88 for taxi in or values below 5.6 or above 27 for taxi out were removed.
 
-![](images/Summary%20of%20attributes.png.png)
+![](images/Summary%20of%20attributes.png)
 
 # 2. Data Exploration
 
