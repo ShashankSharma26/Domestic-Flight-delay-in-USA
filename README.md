@@ -1,5 +1,7 @@
 # Flight Delay Visualisation
 
+# 1. Introduction
+
 This project is to develop an interactive visualisation for domestic flight delays in U.S.A, using the data obtained from Statistical Computing Statistical Graphics 2009 Data Expo ("Get the data",2018). The motivation behind this interactive visualisation is to help the travellers looking to fly within U.S.A to choose the right time of the year as well as the best airlines to avoid flight delays
 
 The visualisation is developed using R shiny and the web application has been hosted on shiny server. The webpage can be accessed using the following url: http://bit.ly/FlighDelay
@@ -43,7 +45,7 @@ The questions that this project aims to answer are:
 * Which route has the most number of delays and why?
 
  
-# 1. Data Wrangling
+# 2. Data Wrangling
 
 There were a lot of NA’s in the data, especially in the columns with kinds of delays such as Carrier Delay, Weather Delay etc., these values were replaced with 0. All the months and days of week were represented in a numerical form in the data. This was changed to appropriate months and days names for quick understanding.
 The data contains information of 20 airlines that fly within USA, the airlines were represented using their IATA code which is a bit hard to interpret. Hence, proper names were given to all the airlines for easy interpretation. 
@@ -60,9 +62,9 @@ Figure 2 shows that taxi in/out also had peculiar values in the data, taxi time 
 
 ![](images/Summary%20of%20attributes.png)
 
-# 2. Data Exploration
+# 3. Data Exploration
 
-## 2.1 Delay pattern by time of the year
+## 3.1 Delay pattern by time of the year
 
 ![](images/total%20arrival%20delay.png)
 
@@ -74,7 +76,7 @@ Figure 3 was unable to explain the reason for less delays in September, October 
 
 This visualisation helps us to understand that the month of June has the maximum delay time due to bad weather, hence, it explains the high delay patterns. Figure 4 also shows that the month of September, October and November has the lowest number of weather delay as compared to all other months which explains the low delay patterns observed in these months in figure 3.
 
-## 2.2 Delay patterns by Airlines
+## 3.2 Delay patterns by Airlines
 
 ![](images/delay%20per%20Airlines.png)
 
@@ -84,7 +86,7 @@ The above figure shows that Southwest, United and American airlines which are am
 
 Figure 7 shows a clearer picture about the measure of punctuality of all the airlines. Southwest airlines had the most number of delays but has the least average carrier delay, this proves that the dominance of southwest in figure 6 was just because of more number of flights. The tree map shows that Mesa Airlines has the highest number of average carrier delay, hence is most likely to be delayed as compared to all other flights.
 
-## 2.3 Taxi In/Out dependency on departure delay
+## 3.3 Taxi In/Out dependency on departure delay
 
 ![](images/Taxi%20in.png)
 
@@ -92,7 +94,7 @@ Figure 7 shows a clearer picture about the measure of punctuality of all the air
 
 Figure 8 and 9 shows that taxi in and taxi out are independent of how delayed a flight is during departure. 
 
-## 2.4 Taxi In/Out dependency on Airlines
+## 3.4 Taxi In/Out dependency on Airlines
 
 ![](images/airlines%20taxi%20in.png)
 
@@ -101,7 +103,7 @@ Figure 8 and 9 shows that taxi in and taxi out are independent of how delayed a 
 
 The above two figures prove that taxi in/out time is independent of airline as well. One thing that can be deduced from last four figures is that taxi in/out time is independent of all attributes in the data as no other attribute would have an impact on taxi time. Therefore, in scope of this data it is not possible to establish a relation with taxi time of flight with any other factor.
 
-## 2.5  Time recovery dependency on departure delay
+## 3.5  Time recovery dependency on departure delay
 
 This section is to identify if a delayed flight is more likely to recover some time during its journey i.e. finish the journey in less than the scheduled journey time. The figure below shows that the time recovered is positively related to delay in departure, but the relation is not as linear as one expects it to be (correlation coefficient = .4).
 
@@ -109,7 +111,7 @@ This section is to identify if a delayed flight is more likely to recover some t
 
 An attempt was made to up this correlation coefficient by using the data with journey distance of more than 600 miles, but even this did not make a significant difference as the correlation coefficient just increased by .04. Hence, it can be deduced that recovery time is moderately related to departure delay.
 
-## 2.6 Routes with most number of delays
+## 3.6 Routes with most number of delays
 
 This section identifies the route with most number of delays in USA. The figure below shows the top 10 routes with the most delays in USA.
 
@@ -119,7 +121,7 @@ This section identifies the route with most number of delays in USA. The figure 
 
 As shown in the figures above, the route between Los Angeles and San Francisco has the most number of delays and the reason for this is majorly late aircraft delay which could be due to high air traffic as NAS delay is not far behind as compared to late air craft delay.
 
-# 3. User guide to Interactive Web Based Visualisation 
+# 4. User guide to Interactive Web Based Visualisation 
 
 ![](images/welcome%20page.png)
 
@@ -151,7 +153,7 @@ The plots are given a colour gradient based on the amount of delay to make the e
 
 The ‘Data’ tab is given in the application to provide the user with the sample data based on which all the visualisations were made. The data table is also provided with a search bar in case a user needs an exact value for from the data.
 
-# 4. Conclusion and Reflection
+# 5. Conclusion and Reflection
 
 The project helps the user to analyse and comprehend the best or the worst time to fly within United States of America. It also assists the user to decide the best possible airlines to fly with and in case the user is travelling to or from one of the airports with most delays, it prepares them as they might experience a delay considering the reputation of the airport. This application gives user the freedom to select the visualisation based on the requirements, as flashing colourful visualisation which is of no meaning to the user is just a waste of space on the screen. This application is made with an attempt to maintain a high data-ink ratio or more appropriately data-pixel ratio to give away maximum information and to ensure good user experience.
 
