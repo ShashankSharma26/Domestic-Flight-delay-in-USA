@@ -70,7 +70,7 @@ Using the graph above, one can easily say that end of December and start of Janu
 
 Figure 3 was unable to explain the reason for less delays in September, October and November and high delay patterns in the month of June. To get a better idea about this, all the months were compared by the amounts of weather delay that occurred in them using a tree map as shown in figure 4 below.
 
-![](images/Weather%delay.png)
+![](images/Weather%20delay.png)
 
 This visualisation helps us to understand that the month of June has the maximum delay time due to bad weather, hence, it explains the high delay patterns. Figure 4 also shows that the month of September, October and November has the lowest number of weather delay as compared to all other months which explains the low delay patterns observed in these months in figure 3.
 
