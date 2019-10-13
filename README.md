@@ -121,9 +121,41 @@ As shown in the figures above, the route between Los Angeles and San Francisco h
 
 # 3. User guide to Interactive Web Based Visualisation 
 
+![](images/welcome%20page.png)
+
 The welcome page of the application is made to help the user understand the motive behind the application. Also, it describes all the tabs used in the application to guide the user to the appropriate tab based on the requirement. The selected tab is given a darker shade to help the user understand which tab is opened at an instance. All the tabs can be accessed by clicking on it once.
 
+![](images/Delay%20per%20time%20of%20year.png)
 
+The first tab named ‘Delay per time of year’ as shown in figure 8, contains radio button to select between two plots. The first one explains the total delay across the year 2008 to help the user understand the worst time to fly in a year within America. Also, as weather is the major factor affecting flight delays at different periods of a year, the total weather delay across the year is also plotted. Initially the plot shows all the months of the year, but the user can alter this by deselecting the checkbox next to any month to hide it, if only a few months are to be considered for the analyses. The deselected can be brought back by selecting it again, this flexibility is given for better scope of analysis.
+
+![](images/routes%20with%20most%20delays.png)
+
+The tab named ‘Routes with most delays’ is to show the worst routes to fly within U.S.A based on time delays. Sankey diagram is implemented to show top ten routes with most time delay based on total time delay and average time delay. Radiobuttons could be used to toggle between the two Sankey diagrams. The reason behind using Sankey over any other diagram was its supremacy to show the links between two nodes (here airports) in a simple yet coherent manner. The Sankey diagram also exhibits hover on functionality when he cursor pointer is placed on a node or a link. Placing a cursor on a node shows a tooltip with the name of the airport represented by that node along with amount of delay occurred at the airport. Similarly, placing the cursor on a link shows a tooltip with flow of the link or in simpler words the origin and the destination airports name represented by the link along with the amount of delay that occurred on that route.
+
+The loops of link observed in figure 9 is another reason that Sankey diagram was implemented. The loop means that the particular route is amongst the top routes with delays for both to and fro journey between the two airports, this trend can be viewed between DAL-HOU and LAX-SFO. The 3 letters used to describe an airport is not best way to convey the name of the airport, hence an index is provided along with the diagram with the full names of the airports for a better understanding.
+
+
+![](images/Delay%20due%20to%20Airlines.png)
+
+It is very important for every traveller to choose the right airlines, as no individual likes to reach the airport to know that flight is delayed due to some airlines issues. Hence, the ‘Delay per Airlines’ tab is included in the application to help the user understand the best and the worst airlines to travel from based on punctuality. This is done by using three plots based on:
+* Average carrier delay: Delay due to mismanagement by airlines
+* Average late air craft delay: Delay due to late arrival of the aircraft to be used for the
+trip.
+* Both: This is important to judge the airlines based on both the factors mentioned
+above
+The plots are given a colour gradient based on the amount of delay to make the experience of the user ever better. The user can toggle between the 3 plots using radiobuttons placed in the side panel of the application.
+
+
+![](images/data.png)
+
+The ‘Data’ tab is given in the application to provide the user with the sample data based on which all the visualisations were made. The data table is also provided with a search bar in case a user needs an exact value for from the data.
+
+# 4. Conclusion and Reflection
+
+The project helps the user to analyse and comprehend the best or the worst time to fly within United States of America. It also assists the user to decide the best possible airlines to fly with and in case the user is travelling to or from one of the airports with most delays, it prepares them as they might experience a delay considering the reputation of the airport. This application gives user the freedom to select the visualisation based on the requirements, as flashing colourful visualisation which is of no meaning to the user is just a waste of space on the screen. This application is made with an attempt to maintain a high data-ink ratio or more appropriately data-pixel ratio to give away maximum information and to ensure good user experience.
+
+The size of the data used in this project was huge as it contained information of about 2 million flight delays in USA. Wrangling the data to the right format and removing the outliers to ensure that the visualisations are not skewed was a very demanding task. All the airlines and airports were mentioned in codes in the data, hence external sources were used to get the names of the airlines and the airports. Also, implementing Sankey diagram was not an easy task as the data was needed to be brought to a very specific format to feed it to plot a Sankey diagram. It was also ensured that the links of the Sankey diagram are coloured which makes it easy to identify and spot routes without any ambiguity even if it overlaps.
 
 
 
