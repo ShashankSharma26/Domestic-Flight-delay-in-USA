@@ -147,7 +147,7 @@ above
 The plots are given a colour gradient based on the amount of delay to make the experience of the user ever better. The user can toggle between the 3 plots using radiobuttons placed in the side panel of the application.
 
 
-![](images/data.png)
+![](images/Data.png)
 
 The ‘Data’ tab is given in the application to provide the user with the sample data based on which all the visualisations were made. The data table is also provided with a search bar in case a user needs an exact value for from the data.
 
