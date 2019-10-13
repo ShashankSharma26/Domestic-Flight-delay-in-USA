@@ -113,7 +113,7 @@ An attempt was made to up this correlation coefficient by using the data with jo
 
 This section identifies the route with most number of delays in USA. The figure below shows the top 10 routes with the most delays in USA.
 
-![](images/routes%20with%20most%20delays.png)
+![](images/routes%20with%20most%20delays%20.png)
 
 ![](images/LAX_SF0%20delay%20reasons.png)
 
