@@ -30,7 +30,7 @@ The attributes of the data are explained below:
 * Diverted:		1 = yes, 0 = no
 * CarrierDelay:		delay within control of airlines (in minutes)
 * WeatherDelay: 		delay due to bad weather (in minutes)
-* NASDelay		delay within control of NAS (in minutes)
+* NASDelay		delay within control of National Airspace System(NAS) (in minutes)
 * SecurityDelay		delay due to security procedures (in minutes)
 * LateAircraftDelay	delay due to late arrival of aircraft (in minutes)
 
@@ -61,6 +61,70 @@ Figure 2 shows that taxi in/out also had peculiar values in the data, taxi time 
 ![](images/Summary%20of%20attributes.png)
 
 # 2. Data Exploration
+
+## 2.1 Delay pattern by time of the year
+
+![](images/total%20arrival%20delay.png)
+
+Using the graph above, one can easily say that end of December and start of January has a lot of delays which can be due festive season in USA. There are few other huge peaks which coincides with or falls around federal holidays in the year 2008, like: February 18 – President’s Day, May 26- Memorial Day and November 28- Thanksgiving. Though this trend is not followed in all the months, but high delays are observed at the beginning and end of many months like January, February, March, April, June and December.
+
+Figure 3 was unable to explain the reason for less delays in September, October and November and high delay patterns in the month of June. To get a better idea about this, all the months were compared by the amounts of weather delay that occurred in them using a tree map as shown in figure 4 below.
+
+![](images/Weather%20delay.png)
+
+This visualisation helps us to understand that the month of June has the maximum delay time due to bad weather, hence, it explains the high delay patterns. Figure 4 also shows that the month of September, October and November has the lowest number of weather delay as compared to all other months which explains the low delay patterns observed in these months in figure 3.
+
+## 2.2 Delay patterns by Airlines
+
+![](images/delay%20per%20Airlines.png)
+
+The above figure shows that Southwest, United and American airlines which are amongst the biggest airlines companies in USA, has the most number of delays in year 2008. This data might be skewed because these airlines have more functional flights than the other ones. Hence, to get a better idea about the airline which is most likely to be delayed, average carrier delay should be used as carrier delay is within the control of the airlines and would be the best factor to suggest an airlines punctuality.
+
+![](images/Carrier%20delay.png)
+
+Figure 7 shows a clearer picture about the measure of punctuality of all the airlines. Southwest airlines had the most number of delays but has the least average carrier delay, this proves that the dominance of southwest in figure 6 was just because of more number of flights. The tree map shows that Mesa Airlines has the highest number of average carrier delay, hence is most likely to be delayed as compared to all other flights.
+
+## 2.3 Taxi In/Out dependency on departure delay
+
+![](images/Taxi%20in.png)
+
+![](images/Taxi%20out.png)
+
+Figure 8 and 9 shows that taxi in and taxi out are independent of how delayed a flight is during departure. 
+
+## 2.4 Taxi In/Out dependency on Airlines
+
+![](images/airlines%20taxi%20in.png)
+
+
+![](images/airlines%20taxi%20out.png)
+
+The above two figures prove that taxi in/out time is independent of airline as well. One thing that can be deduced from last four figures is that taxi in/out time is independent of all attributes in the data as no other attribute would have an impact on taxi time. Therefore, in scope of this data it is not possible to establish a relation with taxi time of flight with any other factor.
+
+## 2.5  Time recovery dependency on departure delay
+
+This section is to identify if a delayed flight is more likely to recover some time during its journey i.e. finish the journey in less than the scheduled journey time. The figure below shows that the time recovered is positively related to delay in departure, but the relation is not as linear as one expects it to be (correlation coefficient = .4).
+
+![](images/departure%20delay%20vs%20time%20recovered.png)
+
+An attempt was made to up this correlation coefficient by using the data with journey distance of more than 600 miles, but even this did not make a significant difference as the correlation coefficient just increased by .04. Hence, it can be deduced that recovery time is moderately related to departure delay.
+
+## 2.6 Routes with most number of delays
+
+This section identifies the route with most number of delays in USA. The figure below shows the top 10 routes with the most delays in USA.
+
+![](images/routes%20with%20most%20delays.png)
+
+![](images/LAX_SF0%20delay%20reasons.png)
+
+As shown in the figures above, the route between Los Angeles and San Francisco has the most number of delays and the reason for this is majorly late aircraft delay which could be due to high air traffic as NAS delay is not far behind as compared to late air craft delay.
+
+# 3. User guide to Interactive Web Based Visualisation 
+
+The welcome page of the application is made to help the user understand the motive behind the application. Also, it describes all the tabs used in the application to guide the user to the appropriate tab based on the requirement. The selected tab is given a darker shade to help the user understand which tab is opened at an instance. All the tabs can be accessed by clicking on it once.
+
+
+
 
 
 
