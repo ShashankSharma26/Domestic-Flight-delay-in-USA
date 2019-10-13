@@ -50,6 +50,18 @@ The data contains information of 20 airlines that fly within USA, the airlines w
 
 To ensure the data is not skewed, the rows of data with departure/arrival delay above the upper whisker of their respective boxplot were removed. The data also had a considerate number of rows with arrival delay below 0 meaning that the flight landed before scheduled time. So much so that the lower whisker of the arrival delay boxplot was at -61 minutes. As this exploration is only to discover the trend in delayed flights, all the rows with negative arrival delay values where removed.
 
+![](images/boxplot%20arrival:departure%20delay.png)
+
+Figure 2 shows that the data has a minimum scheduled elapsed time in negative values which is not possible. Similarly, minimum actual elapsed time of 14 minutes also is unrealistic. The fact that the shortest domestic flight in USA has a journey time of 45 minutes was used to refine this data (Soo Kim, 2018). Hence, all the rows with actual/schedule journey time under 45 were removed. 
+
+The shortest domestic flight mentioned above has an air time of 16 minutes. This fact was used to remove all the rows of the data with airtime value under 16 minutes.
+
+Figure 2 shows that taxi in/out also had peculiar values in the data, taxi time of more than two hours or equal to zero is unrealistic. Therefore, using an online resource to find the maximum and minimum taxi/in out time ("What Is Your Airport's Average Taxi Time?", 2016), all the rows with values below 2 or above 11.88 for taxi in or values below 5.6 or above 27 for taxi out were removed.
+
+![](images/Summary%20of%20attributes.png)
+
+# 2. Data Exploration
+
 
 
 
