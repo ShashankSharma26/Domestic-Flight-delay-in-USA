@@ -42,9 +42,13 @@ The questions that this project aims to answer are:
 •	Is priority given to any specific airlines wile taxi in/out?
 •	Which route has the most number of delays and why?
 
-I was motived to answer these question as this would help travellers to understand the trend of flight delays depending on when they are travelling, where they are travelling and by which airlines they are travelling. 
  
-#1. Data Wrangling
+# 1. Data Wrangling
+
+There were a lot of NA’s in the data, especially in the columns with kinds of delays such as Carrier Delay, Weather Delay etc., these values were replaced with 0. All the months and days of week were represented in a numerical form in the data. This was changed to appropriate months and days names for quick understanding.
+The data contains information of 20 airlines that fly within USA, the airlines were represented using their IATA code which is a bit hard to interpret. Hence, proper names were given to all the airlines for easy interpretation. 
+
+To ensure the data is not skewed, the rows of data with departure/arrival delay above the upper whisker of their respective boxplot were removed. The data also had a considerate number of rows with arrival delay below 0 meaning that the flight landed before scheduled time. So much so that the lower whisker of the arrival delay boxplot was at -61 minutes. As this exploration is only to discover the trend in delayed flights, all the rows with negative arrival delay values where removed.
 
 
 
